@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAdminInterface));
             this.gbAdmin = new System.Windows.Forms.GroupBox();
             this.btnLogout = new System.Windows.Forms.Button();
             this.lblAdmin = new System.Windows.Forms.Label();
@@ -76,6 +77,7 @@
             this.clmTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnTambah = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.gbAdmin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabData.SuspendLayout();
@@ -85,6 +87,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataMember)).BeginInit();
             this.tabDataOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataOrder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // gbAdmin
@@ -93,21 +96,21 @@
             this.gbAdmin.Controls.Add(this.lblAdmin);
             this.gbAdmin.Controls.Add(this.txtNamaAdmin);
             this.gbAdmin.Controls.Add(this.pictureBox1);
-            this.gbAdmin.Location = new System.Drawing.Point(40, 40);
-            this.gbAdmin.Margin = new System.Windows.Forms.Padding(2);
+            this.gbAdmin.Location = new System.Drawing.Point(22, 109);
+            this.gbAdmin.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.gbAdmin.Name = "gbAdmin";
-            this.gbAdmin.Padding = new System.Windows.Forms.Padding(2);
-            this.gbAdmin.Size = new System.Drawing.Size(221, 303);
+            this.gbAdmin.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.gbAdmin.Size = new System.Drawing.Size(281, 303);
             this.gbAdmin.TabIndex = 3;
             this.gbAdmin.TabStop = false;
             this.gbAdmin.Text = "Admin";
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(73, 243);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogout.Location = new System.Drawing.Point(91, 238);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(116, 55);
+            this.btnLogout.Size = new System.Drawing.Size(117, 35);
             this.btnLogout.TabIndex = 0;
             this.btnLogout.Text = "Log Out";
             this.btnLogout.UseVisualStyleBackColor = true;
@@ -116,9 +119,10 @@
             // lblAdmin
             // 
             this.lblAdmin.AutoSize = true;
-            this.lblAdmin.Location = new System.Drawing.Point(142, 312);
+            this.lblAdmin.Location = new System.Drawing.Point(134, 199);
+            this.lblAdmin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAdmin.Name = "lblAdmin";
-            this.lblAdmin.Size = new System.Drawing.Size(155, 25);
+            this.lblAdmin.Size = new System.Drawing.Size(103, 17);
             this.lblAdmin.TabIndex = 2;
             this.lblAdmin.Text = "{ nama admin }";
             // 
@@ -126,18 +130,19 @@
             // 
             this.txtNamaAdmin.AutoSize = true;
             this.txtNamaAdmin.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtNamaAdmin.Location = new System.Drawing.Point(38, 312);
+            this.txtNamaAdmin.Location = new System.Drawing.Point(64, 199);
+            this.txtNamaAdmin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtNamaAdmin.Name = "txtNamaAdmin";
-            this.txtNamaAdmin.Size = new System.Drawing.Size(98, 25);
+            this.txtNamaAdmin.Size = new System.Drawing.Size(65, 17);
             this.txtNamaAdmin.TabIndex = 1;
             this.txtNamaAdmin.Text = "Nama    :";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(46, 37);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(67, 42);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(198, 191);
+            this.pictureBox1.Size = new System.Drawing.Size(157, 130);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -150,16 +155,17 @@
             this.tabData.Controls.Add(this.tabDataBarang);
             this.tabData.Controls.Add(this.tabDataMember);
             this.tabData.Controls.Add(this.tabDataOrder);
-            this.tabData.Location = new System.Drawing.Point(502, 62);
-            this.tabData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabData.Location = new System.Drawing.Point(321, 109);
             this.tabData.Name = "tabData";
             this.tabData.SelectedIndex = 0;
-            this.tabData.Size = new System.Drawing.Size(1404, 880);
+            this.tabData.Size = new System.Drawing.Size(790, 404);
             this.tabData.TabIndex = 2;
             // 
             // tabDataBarang
             // 
+            this.tabDataBarang.Controls.Add(this.btnEdit);
             this.tabDataBarang.Controls.Add(this.lblPenghubung2);
+            this.tabDataBarang.Controls.Add(this.btnTambah);
             this.tabDataBarang.Controls.Add(this.txtHargaMax);
             this.tabDataBarang.Controls.Add(this.txtHargaMin);
             this.tabDataBarang.Controls.Add(this.lblPenghubung);
@@ -173,11 +179,10 @@
             this.tabDataBarang.Controls.Add(this.lblNamaBarang);
             this.tabDataBarang.Controls.Add(this.dgvDataBarang);
             this.tabDataBarang.Controls.Add(this.lblKodeBarang);
-            this.tabDataBarang.Location = new System.Drawing.Point(8, 39);
-            this.tabDataBarang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabDataBarang.Location = new System.Drawing.Point(4, 25);
             this.tabDataBarang.Name = "tabDataBarang";
-            this.tabDataBarang.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDataBarang.Size = new System.Drawing.Size(928, 534);
+            this.tabDataBarang.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabDataBarang.Size = new System.Drawing.Size(782, 375);
             this.tabDataBarang.TabIndex = 0;
             this.tabDataBarang.Text = "Data Barang";
             this.tabDataBarang.UseVisualStyleBackColor = true;
@@ -185,18 +190,20 @@
             // lblPenghubung2
             // 
             this.lblPenghubung2.AutoSize = true;
-            this.lblPenghubung2.Location = new System.Drawing.Point(669, 230);
+            this.lblPenghubung2.Location = new System.Drawing.Point(374, 147);
+            this.lblPenghubung2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPenghubung2.Name = "lblPenghubung2";
-            this.lblPenghubung2.Size = new System.Drawing.Size(19, 25);
+            this.lblPenghubung2.Size = new System.Drawing.Size(13, 17);
             this.lblPenghubung2.TabIndex = 15;
             this.lblPenghubung2.Text = "-";
             // 
             // txtHargaMax
             // 
-            this.txtHargaMax.Location = new System.Drawing.Point(474, 147);
-            this.txtHargaMax.Margin = new System.Windows.Forms.Padding(2);
+            this.txtHargaMax.Location = new System.Drawing.Point(394, 147);
+            this.txtHargaMax.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtHargaMax.MaxLength = 11;
             this.txtHargaMax.Name = "txtHargaMax";
-            this.txtHargaMax.Size = new System.Drawing.Size(201, 22);
+            this.txtHargaMax.Size = new System.Drawing.Size(135, 22);
             this.txtHargaMax.TabIndex = 6;
             this.txtHargaMax.Text = "0";
             this.txtHargaMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -208,9 +215,10 @@
             // txtHargaMin
             // 
             this.txtHargaMin.Location = new System.Drawing.Point(233, 147);
-            this.txtHargaMin.Margin = new System.Windows.Forms.Padding(2);
+            this.txtHargaMin.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtHargaMin.MaxLength = 11;
             this.txtHargaMin.Name = "txtHargaMin";
-            this.txtHargaMin.Size = new System.Drawing.Size(201, 22);
+            this.txtHargaMin.Size = new System.Drawing.Size(135, 22);
             this.txtHargaMin.TabIndex = 5;
             this.txtHargaMin.Text = "0";
             this.txtHargaMin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -222,18 +230,20 @@
             // lblPenghubung
             // 
             this.lblPenghubung.AutoSize = true;
-            this.lblPenghubung.Location = new System.Drawing.Point(669, 167);
+            this.lblPenghubung.Location = new System.Drawing.Point(374, 107);
+            this.lblPenghubung.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPenghubung.Name = "lblPenghubung";
-            this.lblPenghubung.Size = new System.Drawing.Size(19, 25);
+            this.lblPenghubung.Size = new System.Drawing.Size(13, 17);
             this.lblPenghubung.TabIndex = 12;
             this.lblPenghubung.Text = "-";
             // 
             // txtJumlahMax
             // 
-            this.txtJumlahMax.Location = new System.Drawing.Point(474, 107);
-            this.txtJumlahMax.Margin = new System.Windows.Forms.Padding(2);
+            this.txtJumlahMax.Location = new System.Drawing.Point(394, 104);
+            this.txtJumlahMax.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtJumlahMax.MaxLength = 11;
             this.txtJumlahMax.Name = "txtJumlahMax";
-            this.txtJumlahMax.Size = new System.Drawing.Size(201, 22);
+            this.txtJumlahMax.Size = new System.Drawing.Size(135, 22);
             this.txtJumlahMax.TabIndex = 4;
             this.txtJumlahMax.Text = "0";
             this.txtJumlahMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -244,10 +254,11 @@
             // 
             // txtJumlahMin
             // 
-            this.txtJumlahMin.Location = new System.Drawing.Point(233, 107);
-            this.txtJumlahMin.Margin = new System.Windows.Forms.Padding(2);
+            this.txtJumlahMin.Location = new System.Drawing.Point(233, 104);
+            this.txtJumlahMin.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtJumlahMin.MaxLength = 11;
             this.txtJumlahMin.Name = "txtJumlahMin";
-            this.txtJumlahMin.Size = new System.Drawing.Size(201, 22);
+            this.txtJumlahMin.Size = new System.Drawing.Size(135, 22);
             this.txtJumlahMin.TabIndex = 3;
             this.txtJumlahMin.Text = "0";
             this.txtJumlahMin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -259,10 +270,10 @@
             // btnDelete
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDelete.Location = new System.Drawing.Point(792, 43);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDelete.Location = new System.Drawing.Point(596, 17);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(109, 29);
+            this.btnDelete.Size = new System.Drawing.Size(174, 50);
             this.btnDelete.TabIndex = 7;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -272,54 +283,51 @@
             // 
             this.txtNamaBarang.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNamaBarang.Location = new System.Drawing.Point(350, 106);
-            this.txtNamaBarang.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtNamaBarang.Location = new System.Drawing.Point(233, 68);
+            this.txtNamaBarang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNamaBarang.Name = "txtNamaBarang";
-            this.txtNamaBarang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNamaBarang_KeyPress);
-            this.txtNamaBarang.Size = new System.Drawing.Size(537, 22);
+            this.txtNamaBarang.Size = new System.Drawing.Size(296, 22);
             this.txtNamaBarang.TabIndex = 2;
+            this.txtNamaBarang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNamaBarang_KeyPress);
             this.txtNamaBarang.Leave += new System.EventHandler(this.txtKodeBarang_Leave);
             // 
             // txtKodeBarang
             // 
             this.txtKodeBarang.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtKodeBarang.Location = new System.Drawing.Point(350, 41);
-            this.txtKodeBarang.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtKodeBarang.Location = new System.Drawing.Point(233, 26);
+            this.txtKodeBarang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtKodeBarang.MaxLength = 4;
             this.txtKodeBarang.Name = "txtKodeBarang";
-            this.txtKodeBarang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAngka_KeyPress);
-            this.txtKodeBarang.Size = new System.Drawing.Size(537, 22);
+            this.txtKodeBarang.Size = new System.Drawing.Size(296, 22);
             this.txtKodeBarang.TabIndex = 1;
+            this.txtKodeBarang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAngka_KeyPress);
             this.txtKodeBarang.Leave += new System.EventHandler(this.txtKodeBarang_Leave);
             // 
             // lblHarga
             // 
             this.lblHarga.AutoSize = true;
-            this.lblHarga.Location = new System.Drawing.Point(72, 230);
-            this.lblHarga.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHarga.Location = new System.Drawing.Point(48, 147);
             this.lblHarga.Name = "lblHarga";
-            this.lblHarga.Size = new System.Drawing.Size(70, 25);
+            this.lblHarga.Size = new System.Drawing.Size(47, 17);
             this.lblHarga.TabIndex = 4;
             this.lblHarga.Text = "Harga";
             // 
             // lblJumlah
             // 
             this.lblJumlah.AutoSize = true;
-            this.lblJumlah.Location = new System.Drawing.Point(72, 173);
-            this.lblJumlah.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblJumlah.Location = new System.Drawing.Point(48, 111);
             this.lblJumlah.Name = "lblJumlah";
-            this.lblJumlah.Size = new System.Drawing.Size(81, 25);
+            this.lblJumlah.Size = new System.Drawing.Size(53, 17);
             this.lblJumlah.TabIndex = 3;
             this.lblJumlah.Text = "Jumlah";
             // 
             // lblNamaBarang
             // 
             this.lblNamaBarang.AutoSize = true;
-            this.lblNamaBarang.Location = new System.Drawing.Point(72, 112);
-            this.lblNamaBarang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNamaBarang.Location = new System.Drawing.Point(48, 72);
             this.lblNamaBarang.Name = "lblNamaBarang";
-            this.lblNamaBarang.Size = new System.Drawing.Size(143, 25);
+            this.lblNamaBarang.Size = new System.Drawing.Size(95, 17);
             this.lblNamaBarang.TabIndex = 2;
             this.lblNamaBarang.Text = "Nama Barang";
             // 
@@ -339,14 +347,14 @@
             this.clmNamaBarang,
             this.clmJumlah,
             this.clmHarga});
-            this.dgvDataBarang.Location = new System.Drawing.Point(12, 178);
-            this.dgvDataBarang.Margin = new System.Windows.Forms.Padding(9);
+            this.dgvDataBarang.Location = new System.Drawing.Point(8, 191);
+            this.dgvDataBarang.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dgvDataBarang.Name = "dgvDataBarang";
             this.dgvDataBarang.ReadOnly = true;
             this.dgvDataBarang.RowHeadersVisible = false;
             this.dgvDataBarang.RowTemplate.Height = 33;
             this.dgvDataBarang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDataBarang.Size = new System.Drawing.Size(914, 346);
+            this.dgvDataBarang.Size = new System.Drawing.Size(766, 176);
             this.dgvDataBarang.TabIndex = 8;
             this.dgvDataBarang.Resize += new System.EventHandler(this.dgvDataBarang_Resize);
             // 
@@ -377,10 +385,9 @@
             // lblKodeBarang
             // 
             this.lblKodeBarang.AutoSize = true;
-            this.lblKodeBarang.Location = new System.Drawing.Point(72, 45);
-            this.lblKodeBarang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblKodeBarang.Location = new System.Drawing.Point(48, 29);
             this.lblKodeBarang.Name = "lblKodeBarang";
-            this.lblKodeBarang.Size = new System.Drawing.Size(137, 25);
+            this.lblKodeBarang.Size = new System.Drawing.Size(91, 17);
             this.lblKodeBarang.TabIndex = 0;
             this.lblKodeBarang.Text = "Kode Barang";
             // 
@@ -392,10 +399,10 @@
             this.tabDataMember.Controls.Add(this.lblUsername);
             this.tabDataMember.Controls.Add(this.dgvDataMember);
             this.tabDataMember.Location = new System.Drawing.Point(4, 25);
-            this.tabDataMember.Margin = new System.Windows.Forms.Padding(2);
+            this.tabDataMember.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.tabDataMember.Name = "tabDataMember";
-            this.tabDataMember.Padding = new System.Windows.Forms.Padding(2);
-            this.tabDataMember.Size = new System.Drawing.Size(928, 534);
+            this.tabDataMember.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.tabDataMember.Size = new System.Drawing.Size(772, 458);
             this.tabDataMember.TabIndex = 2;
             this.tabDataMember.Text = "Data Member";
             this.tabDataMember.UseVisualStyleBackColor = true;
@@ -404,17 +411,17 @@
             // 
             this.txtNamaUser.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNamaUser.Location = new System.Drawing.Point(229, 54);
-            this.txtNamaUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNamaUser.Location = new System.Drawing.Point(153, 35);
             this.txtNamaUser.Name = "txtNamaUser";
-            this.txtNamaUser.Size = new System.Drawing.Size(537, 22);
+            this.txtNamaUser.Size = new System.Drawing.Size(283, 22);
             this.txtNamaUser.TabIndex = 7;
             this.txtNamaUser.Leave += new System.EventHandler(this.txtDataMember_Leave);
             // 
             // lblNamaUser
             // 
             this.lblNamaUser.AutoSize = true;
-            this.lblNamaUser.Location = new System.Drawing.Point(44, 57);
+            this.lblNamaUser.Location = new System.Drawing.Point(29, 36);
+            this.lblNamaUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNamaUser.Name = "lblNamaUser";
             this.lblNamaUser.Size = new System.Drawing.Size(45, 17);
             this.lblNamaUser.TabIndex = 6;
@@ -424,17 +431,17 @@
             // 
             this.txtUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUsername.Location = new System.Drawing.Point(229, 12);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtUsername.Location = new System.Drawing.Point(153, 8);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(537, 22);
+            this.txtUsername.Size = new System.Drawing.Size(283, 22);
             this.txtUsername.TabIndex = 2;
             this.txtUsername.Leave += new System.EventHandler(this.txtDataMember_Leave);
             // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(44, 15);
+            this.lblUsername.Location = new System.Drawing.Point(29, 10);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(73, 17);
             this.lblUsername.TabIndex = 2;
@@ -455,14 +462,14 @@
             this.clmUsername,
             this.clmNama,
             this.clmTotalPembelian});
-            this.dgvDataMember.Location = new System.Drawing.Point(4, 106);
-            this.dgvDataMember.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvDataMember.Location = new System.Drawing.Point(3, 68);
+            this.dgvDataMember.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.dgvDataMember.Name = "dgvDataMember";
             this.dgvDataMember.ReadOnly = true;
             this.dgvDataMember.RowHeadersVisible = false;
             this.dgvDataMember.RowTemplate.Height = 33;
             this.dgvDataMember.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDataMember.Size = new System.Drawing.Size(920, 424);
+            this.dgvDataMember.Size = new System.Drawing.Size(767, 388);
             this.dgvDataMember.TabIndex = 0;
             this.dgvDataMember.Resize += new System.EventHandler(this.dgvDataMember_Resize);
             // 
@@ -490,10 +497,10 @@
             this.tabDataOrder.Controls.Add(this.lblNoOrder);
             this.tabDataOrder.Controls.Add(this.dgvDataOrder);
             this.tabDataOrder.Location = new System.Drawing.Point(4, 25);
-            this.tabDataOrder.Margin = new System.Windows.Forms.Padding(2);
+            this.tabDataOrder.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.tabDataOrder.Name = "tabDataOrder";
-            this.tabDataOrder.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDataOrder.Size = new System.Drawing.Size(928, 534);
+            this.tabDataOrder.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabDataOrder.Size = new System.Drawing.Size(782, 375);
             this.tabDataOrder.TabIndex = 1;
             this.tabDataOrder.Text = "Data Order";
             this.tabDataOrder.UseVisualStyleBackColor = true;
@@ -502,17 +509,17 @@
             // 
             this.txtNoOrder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNoOrder.Location = new System.Drawing.Point(250, 26);
-            this.txtNoOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNoOrder.Location = new System.Drawing.Point(167, 17);
             this.txtNoOrder.Name = "txtNoOrder";
-            this.txtNoOrder.Size = new System.Drawing.Size(537, 22);
+            this.txtNoOrder.Size = new System.Drawing.Size(213, 22);
             this.txtNoOrder.TabIndex = 3;
             this.txtNoOrder.Leave += new System.EventHandler(this.txtDataOrder_Leave);
             // 
             // lblNoOrder
             // 
             this.lblNoOrder.AutoSize = true;
-            this.lblNoOrder.Location = new System.Drawing.Point(65, 29);
+            this.lblNoOrder.Location = new System.Drawing.Point(43, 19);
+            this.lblNoOrder.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNoOrder.Name = "lblNoOrder";
             this.lblNoOrder.Size = new System.Drawing.Size(67, 17);
             this.lblNoOrder.TabIndex = 4;
@@ -538,14 +545,14 @@
             this.clmHargaBrg,
             this.clmJumlahBrg,
             this.clmTotal});
-            this.dgvDataOrder.Location = new System.Drawing.Point(5, 69);
-            this.dgvDataOrder.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvDataOrder.Location = new System.Drawing.Point(3, 58);
+            this.dgvDataOrder.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.dgvDataOrder.Name = "dgvDataOrder";
             this.dgvDataOrder.ReadOnly = true;
             this.dgvDataOrder.RowHeadersVisible = false;
             this.dgvDataOrder.RowTemplate.Height = 33;
             this.dgvDataOrder.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDataOrder.Size = new System.Drawing.Size(918, 460);
+            this.dgvDataOrder.Size = new System.Drawing.Size(776, 314);
             this.dgvDataOrder.TabIndex = 0;
             // 
             // clmNoOrder
@@ -598,10 +605,10 @@
             // 
             // btnTambah
             // 
-            this.btnTambah.Location = new System.Drawing.Point(82, 588);
-            this.btnTambah.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnTambah.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTambah.Location = new System.Drawing.Point(596, 73);
             this.btnTambah.Name = "btnTambah";
-            this.btnTambah.Size = new System.Drawing.Size(273, 81);
+            this.btnTambah.Size = new System.Drawing.Size(174, 50);
             this.btnTambah.TabIndex = 4;
             this.btnTambah.Text = "Tambah Data";
             this.btnTambah.UseVisualStyleBackColor = true;
@@ -609,25 +616,36 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(70, 712);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEdit.Location = new System.Drawing.Point(596, 131);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(274, 81);
+            this.btnEdit.Size = new System.Drawing.Size(174, 51);
             this.btnEdit.TabIndex = 5;
             this.btnEdit.Text = "Edit Data";
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(232, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(681, 91);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 22;
+            this.pictureBox2.TabStop = false;
+            // 
             // FrmAdminInterface
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 980);
-            this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.btnTambah);
+            this.ClientSize = new System.Drawing.Size(1123, 525);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.gbAdmin);
             this.Controls.Add(this.tabData);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "FrmAdminInterface";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAdminInterface";
@@ -646,6 +664,7 @@
             this.tabDataOrder.ResumeLayout(false);
             this.tabDataOrder.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataOrder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -700,5 +719,6 @@
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.TextBox txtNoOrder;
         private System.Windows.Forms.Label lblNoOrder;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
